@@ -60,7 +60,7 @@ function insertImgInGallery(imageNumber){
     const image = document.createElement("img");
 
     image.alt = `Image ${imageNumber}`;
-    image.src = `./img/gallery/${imageNumber}.jpg`;
+    image.src = `../img/gallery/${imageNumber}.jpg`;
 
     imageLi.appendChild(image);
     gallery.appendChild(imageLi);
