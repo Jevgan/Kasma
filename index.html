@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+     
+    <title>Kasma Blog</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <picture>
+                    <source id="logo" srcset="./img/Logo.svg" type="image/svg+xml" />
+                    <source id="logo" srcset="./img/Logo.png" type="image/png" />
+                    <img id="logo" src="./img/Logo.png" alt="Logo" />
+                </picture>
+                <ul class="menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                </ul>
+            </nav>
+            <section id="home">
+                <h1>Kasma Blog</h1>
+                <p class="offer">
+                    <strong>Kasma</strong> is a blog about the
+                    <strong>cosmetics</strong> , a lot of <strong>cosmetics</strong>
+                    , moreover - more than you need!
+                </p>
+            </section>
+        </header>
+        <main>
+            <section id="blog">
+                <article>
+                    <section id="intro">
+                        <h2>Introduction</h2>
+                        <p>
+                            Cosmetics have been an essential part of human culture for
+                            thousands of years. From the earliest days of civilization to
+                            the modern beauty industry we know today, cosmetics have evolved
+                            to reflect societal values, technological advancements, and
+                            personal aesthetics. This article explores the fascinating
+                            history of cosmetics and how they’ve developed over the
+                            centuries.
+                        </p>
+                    </section>
+                    <section id="egyptian">
+                        <h2>Origins of Cosmetics in Ancient Egypt</h2>
+                        <p>
+                            The history of cosmetics dates back to ancient Egypt, where both
+                            men and women used makeup to enhance their beauty and
+                            demonstrate their social status. The Egyptians are known for
+                            their iconic eye makeup, using kohl to line their eyes. This not
+                            only served an aesthetic purpose but also helped protect the
+                            eyes from the sun's glare and ward off infections.
+                        </p>
+                        <p>
+                            Ancient Egyptians also used natural substances like malachite
+                            and ochre as eye shadow and blush, and they used oils and
+                            perfumes made from flowers and spices for their skin. The beauty
+                            rituals of Cleopatra, the last active ruler of the Ptolemaic
+                            Kingdom of Egypt, are still widely admired today.
+                        </p>
+                    </section>
+                    <section id="new_era">
+                        <h2>Social Media and Influencers: A New Era of Beauty</h2>
+                        <p>
+                            One of the most significant shifts in the cosmetics industry has
+                            been the influence of social media. Platforms like Instagram,
+                            TikTok, YouTube, and Snapchat have transformed how beauty
+                            products are marketed and consumed. Beauty influencers,
+                            vloggers, and makeup artists now have the power to shape trends,
+                            create demand, and introduce new products to millions of
+                            followers.
+                        </p>
+                    </section>
+                    <section id="clean">
+                        <h2>Sustainability and Clean Beauty</h2>
+                        <p>
+                            As environmental awareness grows, sustainability has become a
+                            key consideration for both consumers and brands. The rise of
+                            "clean beauty" emphasizes the use of natural, non-toxic
+                            ingredients, free from harmful chemicals such as parabens,
+                            sulfates, and phthalates. Many consumers are now seeking
+                            products that are cruelty-free, vegan, and packaged in
+                            recyclable or biodegradable materials.
+                        </p>
+                    </section>
+                </article>
+            </section>
+
+            <section id="gallery">                 
+                <ul class="gallery_list">                     
+                </ul>
+                <div class="controls">
+                    <button class="add">Add</button>
+                    <button class="remove">Remove</button>
+                </div>
+            </section>
+        </main>
+        <footer id="contacts">
+
+            <section>
+                <ul>
+                    <li>
+                        <a href="mailto:donotreply@directmail.binance.com">Email us</a>
+                    </li>
+                    <li><a href="tel:+380123456245">Call us</a></li>
+                    <li><a href="https://t.me/blumcrypto_cis">Our telegram</a></li>
+                    <li><a href="https://instagram/blumcrypto_cis">Our Instragram</a></li>
+                </ul>
+            </section>
+            <form id="user-form" >
+                <div class="name">
+                    <label for="name">Name: </label>
+                    <input id="name" name="username" type="text" required>
+                </div>
+
+                <div class="age">
+                    <label for="age">Age: </label>
+                    <input id="age" name="age" type="number" required>                    
+                </div>
+
+                <div class="email">
+                    <label for="email">Email: </label>
+                    <input id="email" name="email" type="email" required>
+                </div>
+
+                <button type="submit">Send</button>
+            </form>
+
+        </footer>
+    </div>
+    <script  src="./script.js" defer></script>
+
+</body>
+
+</html>
