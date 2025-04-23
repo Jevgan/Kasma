@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-     
+
     <title>Kasma Blog</title>
 </head>
 
@@ -22,6 +22,7 @@
                     <li><a href="#home">Home</a></li>
                     <li><a href="#blog">Blog</a></li>
                     <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#weather_section">Weather</a></li>
                     <li><a href="#contacts">Contacts</a></li>
                 </ul>
             </nav>
@@ -34,77 +35,118 @@
                 </p>
             </section>
         </header>
+        <section>
+            <dialog>
+                <form method="dialog">
+                    <p>This is some text in a dialog.</p>
+                    <button>Close dialog</button>
+                </form>
+            </dialog>
+        </section>
         <main>
-            <section id="blog">
-                <article>
-                    <section id="intro">
-                        <h2>Introduction</h2>
-                        <p>
-                            Cosmetics have been an essential part of human culture for
-                            thousands of years. From the earliest days of civilization to
-                            the modern beauty industry we know today, cosmetics have evolved
-                            to reflect societal values, technological advancements, and
-                            personal aesthetics. This article explores the fascinating
-                            history of cosmetics and how they’ve developed over the
-                            centuries.
-                        </p>
-                    </section>
-                    <section id="egyptian">
-                        <h2>Origins of Cosmetics in Ancient Egypt</h2>
-                        <p>
-                            The history of cosmetics dates back to ancient Egypt, where both
-                            men and women used makeup to enhance their beauty and
-                            demonstrate their social status. The Egyptians are known for
-                            their iconic eye makeup, using kohl to line their eyes. This not
-                            only served an aesthetic purpose but also helped protect the
-                            eyes from the sun's glare and ward off infections.
-                        </p>
-                        <p>
-                            Ancient Egyptians also used natural substances like malachite
-                            and ochre as eye shadow and blush, and they used oils and
-                            perfumes made from flowers and spices for their skin. The beauty
-                            rituals of Cleopatra, the last active ruler of the Ptolemaic
-                            Kingdom of Egypt, are still widely admired today.
-                        </p>
-                    </section>
-                    <section id="new_era">
-                        <h2>Social Media and Influencers: A New Era of Beauty</h2>
-                        <p>
-                            One of the most significant shifts in the cosmetics industry has
-                            been the influence of social media. Platforms like Instagram,
-                            TikTok, YouTube, and Snapchat have transformed how beauty
-                            products are marketed and consumed. Beauty influencers,
-                            vloggers, and makeup artists now have the power to shape trends,
-                            create demand, and introduce new products to millions of
-                            followers.
-                        </p>
-                    </section>
-                    <section id="clean">
-                        <h2>Sustainability and Clean Beauty</h2>
-                        <p>
-                            As environmental awareness grows, sustainability has become a
-                            key consideration for both consumers and brands. The rise of
-                            "clean beauty" emphasizes the use of natural, non-toxic
-                            ingredients, free from harmful chemicals such as parabens,
-                            sulfates, and phthalates. Many consumers are now seeking
-                            products that are cruelty-free, vegan, and packaged in
-                            recyclable or biodegradable materials.
-                        </p>
-                    </section>
-                </article>
-            </section>
+            <article id="blog">
+                <section id="intro">
+                    <h2>Introduction</h2>
+                    <p>
+                        Cosmetics have been an essential part of human culture for
+                        thousands of years. From the earliest days of civilization to
+                        the modern beauty industry we know today, cosmetics have evolved
+                        to reflect societal values, technological advancements, and
+                        personal aesthetics. This article explores the fascinating
+                        history of cosmetics and how they’ve developed over the
+                        centuries.
+                    </p>
+                </section>
+                <section id="egyptian">
+                    <h2>Origins of Cosmetics in Ancient Egypt</h2>
+                    <p>
+                        The history of cosmetics dates back to ancient Egypt, where both
+                        men and women used makeup to enhance their beauty and
+                        demonstrate their social status. The Egyptians are known for
+                        their iconic eye makeup, using kohl to line their eyes. This not
+                        only served an aesthetic purpose but also helped protect the
+                        eyes from the sun's glare and ward off infections.
+                    </p>
+                    <p>
+                        Ancient Egyptians also used natural substances like malachite
+                        and ochre as eye shadow and blush, and they used oils and
+                        perfumes made from flowers and spices for their skin. The beauty
+                        rituals of Cleopatra, the last active ruler of the Ptolemaic
+                        Kingdom of Egypt, are still widely admired today.
+                    </p>
+                </section>
+                <section id="new_era">
+                    <h2>Social Media and Influencers: A New Era of Beauty</h2>
+                    <p>
+                        One of the most significant shifts in the cosmetics industry has
+                        been the influence of social media. Platforms like Instagram,
+                        TikTok, YouTube, and Snapchat have transformed how beauty
+                        products are marketed and consumed. Beauty influencers,
+                        vloggers, and makeup artists now have the power to shape trends,
+                        create demand, and introduce new products to millions of
+                        followers.
+                    </p>
+                </section>
+                <section id="clean">
+                    <h2>Sustainability and Clean Beauty</h2>
+                    <p>
+                        As environmental awareness grows, sustainability has become a
+                        key consideration for both consumers and brands. The rise of
+                        "clean beauty" emphasizes the use of natural, non-toxic
+                        ingredients, free from harmful chemicals such as parabens,
+                        sulfates, and phthalates. Many consumers are now seeking
+                        products that are cruelty-free, vegan, and packaged in
+                        recyclable or biodegradable materials.
+                    </p>
+                </section>
+            </article>
 
-            <section id="gallery">                 
-                <ul class="gallery_list">                     
+            <section id="gallery">
+                <ul class="gallery_list">
                 </ul>
                 <div class="controls">
                     <button class="add">Add</button>
                     <button class="remove">Remove</button>
                 </div>
             </section>
+            <section class="weather" id="weather_section">
+                <form class="glass_card" id="weather_form" method="get">
+
+                    <fieldset  >
+                        <legend>City</legend>
+                        <select name="city" id="city">
+                            <option value="rivne">Rivne</option>
+                            <option value="kyiv">Kyiv</option>
+                            <option value="poltava">Poltava</option>
+                            <option value="kharkiv">Kharkiv</option>
+                            <option value="odessa">Odessa</option>
+                            <option value="ternopil">Ternopil</option>
+                        </select>
+                    </fieldset>
+                    <button type="submit">Track weather</button>
+                </form>
+                <fieldset class="glass_card" id="weather_output">
+                    <legend class="heading">                    
+                        <h3>Weather in <span id="weather_city_name"></span></h3>                        
+                    </legend>
+
+                    <div id="weather_info" ></div>
+
+                    <!-- <h2>Temperature</h2>
+                    <p id="temp_info"></p>
+
+                    <h2>Windspeed</h2>
+                    <p id="windspeed_info"></p>
+
+                    <h2>Winddirection</h2>
+                    <p id="winddirection_info"></p>
+
+                    <h2>Weathercode</h2>
+                    <p id="weathercode_info"></p> -->
+                </fieldset>
+            </section>
         </main>
         <footer id="contacts">
-
             <section>
                 <ul>
                     <li>
@@ -115,7 +157,7 @@
                     <li><a href="https://instagram/blumcrypto_cis">Our Instragram</a></li>
                 </ul>
             </section>
-            <form id="user-form" >
+            <form id="user-form">
                 <div class="name">
                     <label for="name">Name: </label>
                     <input id="name" name="username" type="text" required>
@@ -123,7 +165,7 @@
 
                 <div class="age">
                     <label for="age">Age: </label>
-                    <input id="age" name="age" type="number" required>                    
+                    <input id="age" name="age" type="number" required>
                 </div>
 
                 <div class="email">
@@ -136,7 +178,7 @@
 
         </footer>
     </div>
-    <script  src="./scripts/script.js" defer></script>
+    <script src="./scripts/script.js" type="module" defer></script>
 
 </body>
 
